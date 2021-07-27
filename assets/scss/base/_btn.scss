@@ -1,0 +1,244 @@
+%btn,
+.btn {
+  @include niramit;
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: #000;
+  color: #fff;
+
+  &:active,
+  &:hover {
+    background: #ccc;
+    color: #000;
+  }
+
+  span {
+    position: relative;
+    @extend .icon-arrow-right;
+
+    &:before {
+      @extend %icons;
+      position: absolute;
+      right: -21px;
+      top: calc(50% + 2px);
+      font-size: 12px;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &--only-icon {
+    padding: 0;
+    width: 61px;
+    height: 61px;
+    font-size: 0;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 17px;
+        transform: translate(-50%, -50%);
+
+        @media only screen and (min-width: 768px) {
+          font-size: 13px;
+        }
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: 39px;
+      height: 30px;
+    }
+  }
+
+  &--lost-icon {
+    padding: 11px 16px 11px 16px;
+
+    span {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &--reverse {
+    span {
+      &:before {
+        right: inherit;
+        left: -39px;
+        top: 2px;
+      }
+    }
+  }
+
+  &--cart {
+    span {
+      position: relative;
+      @extend .icon-cart;
+    }
+  }
+
+  &--blue {
+    background: $blue;
+
+    &:active,
+    &:hover {
+      background: lighten($blue, 5%);
+    }
+  }
+
+  &--orange {
+    background: $orange;
+
+    &:active,
+    &:hover {
+      background: lighten($orange, 5%);
+    }
+  }
+
+  &--violet {
+    background: $violet;
+
+    &:active,
+    &:hover {
+      background: lighten($purple, 5%);
+    }
+  }
+
+  &--red {
+    background: $red;
+
+    &:active,
+    &:hover {
+      background: lighten($red, 5%);
+    }
+  }
+
+  &--red-voucher {
+    background: $red-voucher2;
+
+    &:active,
+    &:hover {
+      background: lighten($red-voucher2, 5%);
+    }
+  }
+
+  &--light-indigo {
+    background: $light-indigo;
+
+    &:active,
+    &:hover {
+      background: lighten($light-indigo, 5%);
+    }
+  }
+
+  &--dark-blue {
+    background: $dark-blue;
+
+    &:active,
+    &:hover {
+      background: lighten($dark-blue, 5%);
+    }
+  }
+
+  &--light-forest-green {
+    background: $light-forest-green;
+
+    &:active,
+    &:hover {
+      background: lighten($light-forest-green, 5%);
+    }
+  }
+
+  &--no-bg {
+    background: none;
+    color: $blue;
+
+    &:active,
+    &:hover {
+      background: none;
+    }
+  }
+
+  &--white {
+    background: $white;
+    color: $blue;
+  }
+
+  &--cyan {
+    background: $cyan;
+    color: $white;
+
+    &:active,
+    &:hover {
+      background: lighten($cyan, 5%);
+    }
+  }
+
+  &--gray {
+    background: $gray;
+    color: $blue;
+
+    &:active,
+    &:hover {
+      background: $gray;
+      color: $blue;
+    }
+  }
+
+  // modifier size
+  &--full {
+    width: 100%;
+    padding: 11px 16px 14px 16px;
+  }
+
+  &--large {
+    min-width: 209px;
+  }
+
+  &--small {
+    padding: 11px 33px 14px 16px;
+  }
+
+  &--depend {
+    width: 100%;
+    text-align: left;
+
+    span {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+
+  &--arrow {
+    min-width: 140px;
+  }
+
+  &--depend-mobile {
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+      text-align: left;
+
+      span {
+        width: 100%;
+        display: inline-block;
+      }
+    }
+  }
+}

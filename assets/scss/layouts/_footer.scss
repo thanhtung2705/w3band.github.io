@@ -1,0 +1,36 @@
+.footer {
+  padding: 64px 0;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li {
+    padding: 0 5px;
+
+    a {
+      color: #9f9f9f;
+
+      &:hover {
+        opacity: .6;
+      }
+
+      i:before {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__content {
+    padding: 15px 0;
+    text-align: center;
+    color: #757575;
+
+    a {
+      text-decoration: underline;
+      color: #757575 !important;
+    }
+  }
+}

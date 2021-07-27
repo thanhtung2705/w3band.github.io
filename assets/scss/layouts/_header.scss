@@ -1,0 +1,146 @@
+.header {
+  height: 46px;
+  background-color: #000;
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 16%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1111;
+
+  @media only screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #nav {
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+    }
+
+    @media only screen and (max-width: 767px) {
+      // display: inherit;
+    }
+  
+    li {
+      position: relative;
+      line-height: 46px;
+      padding: 0 24px;
+      display: block;
+
+      &:first-child {
+        @media only screen and (max-width: 767px) {
+          display: inline-block;
+        }
+      }
+
+      &:hover {
+        background-color: #ccc;
+        transition: .3s;
+        a {
+          color: #000;
+        }
+
+        .subnav {
+          display: block;
+        }
+      }
+  
+      a {
+        color: $white;
+        font-size: 18px;
+        display: block;
+        cursor: pointer;
+      }
+    }
+  
+    .subnav {
+      display: none;
+      background-color: #333;
+      position: initial;
+      top: 100%;
+      left: 0;
+      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2);
+      min-width: 160px;
+      z-index: 1;
+      margin: 0 -24px;
+
+      @media only screen and (min-width: 768px) {
+        position: absolute;
+        background-color: #fff;
+        margin: 0;
+      }
+
+      li {
+        width: 100%;
+
+        a {
+          color: #000;
+          font-size: 16px;
+          padding: 0 16px;
+          line-height: 38px;
+
+          @media only screen and (max-width: 767px) {
+            color: #fff;
+          }
+        }
+
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+    }
+
+    .nav-arrow-down:before {
+      font-size: 12px;
+    }
+  }
+
+  .search-btn {
+    width: 52px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+
+    &:hover {
+      background-color: red;
+    }
+
+    .search-icon {
+      color: #fff;
+    }
+  }
+
+  .mobile-menu-btn {
+    line-height: 46px;
+    padding: 0 24px;
+    color: #fff;
+    display: block;
+    height: 46px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &:hover {
+      background: #ccc;
+      color: #000;
+    }
+
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}

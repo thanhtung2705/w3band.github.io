@@ -1,0 +1,239 @@
+// .popup {
+//   position: fixed;
+//   background-color: rgba(#182936,0.8);
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 10;
+
+//   &__layout {
+//     overflow: hidden;
+//     height: calc(100% - 40px);
+//     margin-top: 20px;
+//     margin: auto;
+//     display: flex;
+//     margin-top: 20px;
+//     align-items: center;
+//   }
+
+//   &__scroll {
+//     margin: auto;
+//     overflow: auto;
+//     max-height: 100%;
+//     width: calc(100% + 30px);
+//     padding-right: 30px;
+//     flex: 0 0 auto;
+//   }
+
+//   &__title {
+//     background-color: $dark-cyan;
+//     color: $white;
+//     letter-spacing: normal;
+//     text-align: center;
+//   }
+
+//   &__wrap {
+//     background-color: $white;
+//     padding: 20px;
+
+//     @media only screen and (min-width: $tablet) {
+//       padding: 30px;
+//       display: flex;
+//       align-items: center;
+//     }
+
+//     @media only screen and (min-width: $desktop) {
+//       padding: 40px 120px;
+//     }
+//   }
+
+//   &__left {
+//     display: flex;
+//     align-items: center;
+
+//     @media only screen and (min-width: $tablet) {
+//       display: block;
+//     }
+
+//     @media only screen and (min-width: $desktop) {
+//       width: 36%;
+//     }
+
+//     .popup__body {
+//       @media only screen and (min-width: $tablet) {
+//         display: none;
+//       }
+//     }
+//   }
+
+//   &__title {
+//     position: relative;
+//     padding: 29px 0;
+//     line-height: 1.38;
+
+//     @media only screen and (max-width: 767px) {
+//       font-size: 16px;
+//     }
+//   }
+
+//   &__close {
+//     position: absolute;
+//     font-size: 0;
+//     top: 10px;
+//     right: 10px;
+//     cursor: pointer;
+//     width: 25px;
+//     height: 25px;
+//     text-align: right;
+
+//     @media only screen and (min-width: $tablet) {
+//       top: 20px;
+//       right: 20px;
+//       width: auto;
+//       height: auto;
+//     }
+
+//     &::before {
+//       font-size: 11.4px;
+
+//       @media only screen and (min-width: $tablet) {
+//         font-size: 16.4px;
+//       }
+//     }
+//   }
+
+//   &__right {
+//     @media only screen and (min-width: $tablet)  {
+//       width: 64%;
+//       padding: 0 0 0 50px;
+//     }
+
+//     .popup__body {
+//       @media only screen and (max-width: 767px) {
+//         display: none;
+//       }
+//     }
+//   }
+
+//   &__body {
+//     @media only screen and (max-width: 767px) {
+//       width: 63%;
+//       padding: 0 0 0 22px;
+//     }
+//   }
+
+//   &__caption {
+//     @extend .h3;
+//     letter-spacing: normal;
+//     line-height: 1.2;
+
+//     @media only screen and (max-width: 767px) {
+//       font-size: 16px;
+//       line-height: 1.38;
+//     }
+//   }
+
+//   &__image {
+//     line-height: 0;
+//     text-align: center;
+
+//     @media only screen and (max-width: 767px) {
+//       width: 37%;
+//     }
+
+//     img {
+//       width: auto;
+//       height: auto;
+//       max-height: 350px;
+//     }
+//   }
+
+//   &__multilink {
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: flex-end;
+
+//     .btn {
+//       min-width: 193px;
+//       margin-top: 20px;
+//       margin-right: 20px;
+
+//       @media only screen and (max-width: 767px) {
+//         margin-right: 0;
+//         width: 100%;
+//         margin-top: 10px;
+//       }
+
+//       &:first-child {
+//         margin-top: 24px;
+
+//         @media only screen and (max-width: 767px) {
+//           margin-top: 30px;
+//         }
+//       }
+
+//       &:last-child {
+//         margin-right: 0;
+//       }
+
+//       span {
+//         display: flex;
+//       }
+//     }
+//   }
+
+//   &__price {
+//     @media only screen and (max-width: 767px) {
+//       margin-top: 6px;
+//     }
+
+//     span {
+//       color: $red;
+
+//       @media only screen and (max-width: 767px) {
+//         font-size: 14px;
+//       }
+//     }
+//   }
+
+//   .container {
+//     height: 100%;
+//   }
+
+//   del,
+//   ins {
+//     font-size: 15px;
+//     display: block!important;
+//     text-decoration: none;
+//     font-weight: 400!important;
+//     opacity: 1!important;
+
+//     span {
+//       color: $red;
+//     }
+//   }
+
+//   del {
+//     text-decoration: none;
+//     color: $blue;
+
+//     span {
+//       text-decoration: line-through;
+//       font-size: 14px;
+//     }
+//   }
+
+//   ins {
+//     margin-top: -11px;
+//     color: $red;
+
+//     span {
+//       font-size: 21px;
+
+//       span {
+//         font-size: 14px;
+//       }
+//     }
+//   }
+// }
